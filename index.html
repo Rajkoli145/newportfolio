@@ -6,20 +6,21 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <div class="container">
+    <header style="background-color: white; box-shadow: 0 1px 3px rgba(0,0,0,0.1); padding: 15px 0;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
             <div class="logo">
-                <h1>Portfolio</h1>
+                <h1 style="font-size: 28px; color: #4a6cf7; margin: 0;">Portfolio</h1>
             </div>
             <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                <ul style="display: flex; gap: 30px; margin: 0; padding: 0;">
+                    <li style="list-style: none;"><a href="#home" style="text-decoration: none; color: #333; font-weight: 500;">Home</a></li>
+                    <li style="list-style: none;"><a href="#about" style="text-decoration: none; color: #333; font-weight: 500;">About</a></li>
+                    <li style="list-style: none;"><a href="#skills" style="text-decoration: none; color: #333; font-weight: 500;">Skills</a></li>
+                    <li style="list-style: none;"><a href="#projects" style="text-decoration: none; color: #333; font-weight: 500;">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -36,10 +37,19 @@
                 <div class="cta-buttons">
                     <a href="#projects" class="btn primary-btn">View My Work</a>
                     <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                    
+                </div>
+                
+                <div class="social-links" style="margin-top: 20px; margin-left: 20px;">
+                    <a href="" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="shape"></div>
+                
                 
                   
             </div>
@@ -411,6 +421,7 @@
             </div>
         </div>
     </section>
+    
 
     <!-- Footer -->
     <footer>
@@ -429,5 +440,14 @@
                     </ul>
                 </div>
                 <div class="footer-social">
-                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="" class="social-link"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 John Doe. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
