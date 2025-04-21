@@ -284,7 +284,7 @@ nav ul li a:hover::after {
 .about-image {
     width: 100%;
     height: 100%;
-    background-image: url('solo1.jpeg'); /* Replace with your image */
+    background-image: url('myphot.jpeg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
     border-radius: 1500px;
@@ -324,7 +324,7 @@ nav ul li a:hover::after {
     width: 100%;
     height: 100%;
     /* background: linear-gradient(45deg, #e9ecef 25%, #f8f9fa 25%, #f8f9fa 50%, #e9ecef 50%, #e9ecef 75%, #f8f9fa 75%, #f8f9fa); */
-    background-image: url('solo1.jpeg');
+    background-image: url('myphoto.png');
     background-size: 20px 20px;
     animation: moveBackground 30s linear infinite;
 }
