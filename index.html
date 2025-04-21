@@ -381,9 +381,11 @@
                     
                     <div class="contact-details">
                         <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
+                            <a href="https://www.google.co.in/maps/place/BITSoM,+BITS+School+of+Management/@19.2551706,73.1994487,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c7b4bf193655:0xbed2ed46d787f335!8m2!3d19.2551656!4d73.202029!16s%2Fg%2F11ngg1f370?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="contact-link">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                            </a>
                             <div class="contact-text">
                                 <h4>Location</h4>
                                 <p>Murbad Rd, Kamba, Kalyan, Maharashtra 421301</p>
@@ -391,13 +393,18 @@
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=raginisingh.sejal@gmail.com" class="contact-link">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </a>
                             </div>
                             <div class="contact-text">
                                 <h4>Email</h4>
                                 <p>raginisingh.sejal@gmail.com</p>
                             </div>
                         </div>
+        
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-phone-alt"></i>
@@ -422,50 +429,50 @@
                 
 
                 <div class="contact-form">
-                    <h3>Send Me a Message</h3>
-                    <form id="contactForm" action="https://formspree.io/f/mzzenqpk" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn primary-btn">Send Message</button>
-                    </form>
-                    <div id="responseMessage" style="display:none;">
-                        <p>Your message has been sent successfully!</p>
-                    </div>
-                </div>
-                
-                <script>
-                    document.getElementById("contactForm").addEventListener("submit", function(event) {
-                        event.preventDefault(); // Prevent the form from submitting the traditional way
-                
-                        const formData = new FormData(this);
-                        
-                        fetch("https://formspree.io/f/mzzenqpk", {
-                            method: "POST",
-                            body: formData
-                        })
-                        .then(response => response.json())
-                        .then(data => {
-                            // Handle the response (e.g., show a custom success message)
-                            if (data.success) {
-                                document.getElementById("responseMessage").style.display = "block";
-                                this.reset(); // Clear the form fields
-                            }
-                        })
-                        .catch(error => {
-                            console.error("Error:", error);
-                        });
-                    });
-                </script>
+    <h3>Send Me a Message</h3>
+    <form id="contactForm" action="https://formspree.io/f/mzzenqpk" method="POST">
+        <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn primary-btn">Send Message</button>
+    </form>
+    <div id="responseMessage" style="display:none;">
+        <p>Your message has been sent successfully!</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the form from submitting the traditional way
+
+        const formData = new FormData(this);
+        
+        fetch("https://formspree.io/f/mzzenqpk", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Handle the response (e.g., show a custom success message)
+            if (data.success) {
+                document.getElementById("responseMessage").style.display = "block";
+                this.reset(); // Clear the form fields
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+    });
+</script>
     </section>
     
 
